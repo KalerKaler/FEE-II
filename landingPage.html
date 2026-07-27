@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <style>
-        
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            border-radius: 1vw;
+            background: beige;
+            padding: 2vw;
+            width: 95vw;
+        }
+        body{
+            background: rgba(20,21,34,0.7);
+        }
+        .item{
+            border-radius: 1vw;
+            padding: 1vw;
+            width: 85vw;
+        }
+        .listBox{
+            width: 90vw;
+        }
     </style>
 </head>
 <body>
@@ -24,6 +43,7 @@
             const addbtn=document.createElement("button");
             addbtn.textContent="ADD";
             const todolist=document.createElement("div");
+            todolist.classList.add('listBox');
             todolist.style.border="2px solid black"
             todocontainer.append(todoinput,addbtn,todolist);
             
@@ -35,6 +55,7 @@
                 const todoitem=document.createElement("div");
                 todoitem.style.border="2px solid red";
                 todoitem.style.margin="10px";
+                todoitem.classList.add("item");
 
                 const p=document.createElement("p");
                 p.textContent=task;
