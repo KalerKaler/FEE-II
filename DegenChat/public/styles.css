@@ -1,0 +1,79 @@
+body{
+    background: rgb(120, 93, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#chatbox{
+    width: 98vw;
+    height: 97vh;
+    background: rgb(165, 147, 245);
+    margin: auto;
+}
+
+#logo{
+    /* position: absolute;
+    left: 2vw;
+    top: 3vh; */
+    width: 5vw;
+    border: 2px solid blue;
+}
+
+.topBar{
+    display: flex;
+    background: rgba(10,11,20,0.1);
+    text-align: center;
+    height: 6vh;
+}
+
+.topBar p{
+    color: blue;
+    font-size: 1.4rem;
+}
+
+.purple{
+    color: purple;
+}
+
+.bottomBar{
+    position: fixed;
+    bottom: 3vh;
+    left: 1.5vw;
+    width: 97vw;
+    height: 10vh;
+    background: rgba(10, 15, 22, 0.2);
+}
+
+.msg-box{
+    width: 85vw;
+    height: 8vh;
+}
+
+#sendMessage{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.submit{
+    width: 5vw;
+}
+
+#messages{
+    text-decoration: none;
+    list-style: none;
+    bottom: 14vh;
+    overflow: scroll;
+    height: 79vh;
+}
+
+#messages li{
+    border: 2px solid purple;
+    padding: 2rem;
+    background: bisque;
+    border-radius: 1rem;
+    width: 70vw;
+    margin: 1.4rem;
+}

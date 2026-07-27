@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: rgba(171, 24, 22, 0.7);
+            /* padding: 25vh; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+            height: 40vh;
+            border-radius: 2rem;
+            align-items: center;
+            vertical-align: middle;
+            margin: auto;
+            background: rgba(53, 108, 190, 0.7);
+            padding: 2rem;
+            border: solid 1.8rem red;
+        }
+        label{
+            padding: 2rem;
+        }
+        input{
+            border-radius: 2rem;
+            width: 15rem;
+        }
+        #navbar{
+            margin-top: 0;
+            padding-top: 0;
+            left: 0;
+            margin-left: 0;
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aqua;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        img{
+            width: 40px;
+        }
+        .chessbox{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            width: 400px;
+            height: 400px;
+        }
+        .white{
+            width: 100px;
+            height: 100px;
+            background: white;
+            border:solid green;
+        }
+        .black{
+            background: black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <nav id="navbar">
+        <a href="#">NeuroFans
+            <!-- <img src="HEH8W8Ca4AA8UMy.jpg" alt="Neuro"> -->
+        </a> 
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+
+    <form action="submit">
+        <label for="Name">Name</label><input type="text">
+        <label for="password">Password</label>
+        <div>
+            <input type="password"><i class="fa-brands fa-accusoft" title="The password should be 8 letters long"></i>
+        </div>
+    </form>
+
+    <div class="chessbox">
+        <div class="white"></div>        
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>  
+        <div class="black"></div>      
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="white"></div>        
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>   
+        <div class="black"></div>     
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+    </div>
+</body>
+</html>

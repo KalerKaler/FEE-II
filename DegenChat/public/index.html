@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DegenChat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="chatbox">
+        <div class="topBar">
+            <img src="New Piskel.png" alt="Logo" id="logo">
+            <p><span class="purple">Degen</span> Chat</p>
+        </div>
+        <ul id="messages"></ul>
+        <div class="bottomBar">
+            <form id="sendMessage">
+                <input type="text" class="msg-box">
+                <button class="submit"><i class="fa-duotone fa-solid fa-cloud-arrow-up"></i></button>
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-box{
+            position: relative;
+            width: 800px;
+            height: 800px;
+            border-radius: 15%;
+        }
+        .red{
+            background: red;
+        }
+        .white{
+            background: white;
+        }
+        .itm{
+            position: absolute;
+        }
+        .box1{
+            bottom: 80px;
+            left: 85px;
+            width: 300px;
+            height: 320px;
+            z-index: 66;
+        }
+        .box2{
+            bottom: 80px;
+            left: 58px;
+            width: 400px;
+            height: 400px;
+            z-index: 4;
+        }
+        .box3{
+            bottom: 80px;
+            left: 58px;
+            width: 500px;
+            height: 500px;
+            z-index: 3;
+        }
+        .box4{
+            bottom: 80px;
+            left: 58px;
+            width: 550px;
+            height: 550px;
+            z-index: 2;
+        }
+        .box5{
+            bottom: 80px;
+            left: 58px;
+            width: 650px;
+            height: 650px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="red bg-box">
+        <div class="white box1 itm"></div>
+        <div class="red box2 itm"></div>
+        <div class="white box3 itm"></div>
+        <div class="red box4 itm"></div>
+        <div class="white box5 itm"></div>
+    </div>
+
+</body>
+</html>
